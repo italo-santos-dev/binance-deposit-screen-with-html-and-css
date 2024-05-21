@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depósito USDT</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #181A20;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #2a2a2a;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 360px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header i {
+            font-size: 20px;
+            padding: 7px;
+        }
+
+        .header div {
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 86px;
+            white-space: nowrap; /* Evita que o texto quebre para a próxima linha */
+        }
+
+        .header-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-icons i {
+            font-size: 16px;
+            margin-right: 5px;
+        }
+
+        .qr-code img {
+            padding-top: 30px;
+            margin-bottom: 20px;
+            width: 50%;
+        }
+
+        .details {
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+            position: relative;
+        }
+
+        .details .network,
+        .details .address {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            /* Adicionando margem inferior */
+        }
+
+        .details .network i,
+        .details .address i {
+            color: #aaa;
+            font-size: 14px;
+            /* Diminuindo o tamanho do ícone */
+            margin-right: 5px;
+            /* Adicionando margem à direita */
+        }
+
+        .details .network {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #444;
+        }
+
+        .network p {
+            margin: 5px 0;
+            color: #aaa;
+        }
+
+        .address p {
+            word-wrap: break-word;
+            margin: 5px 0;
+            color: #aaa;
+        }
+
+        .address strong {
+            text-align: left;
+        }
+
+        .address-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .address-content p {
+            flex-grow: 1;
+            word-break: break-all;
+        }
+
+        .address-content-p {}
+
+        .button {
+            background-color: #f0b90b;
+            color: #000;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .more-details {
+            color: #aaa;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="material-icons">arrow_back</i>
+            <div class="header div">Depósito USDT</div>
+
+            <div class="header-icons">
+                <i class="material-symbols-outlined" style="font-size: 16px;">unknown_document</i>
+                <i class="material-symbols-outlined" style="font-size: 16px;">overview</i>
+            </div>
+        </div>
+        <div class="qr-code">
+            <img src="assets/imagens/qrCode/qrCode.png" alt="QR Code">
+        </div>
+        <div class="details">
+            <div class="network">
+                <div>
+                    <p><strong>Rede</strong></p>
+                    <p style="color: white;">Solana</p>
+                    <p><em>* Informações do Contrato ***nwNYB</em></p>
+                </div>
+                <i class="material-icons">sync_alt</i>
+            </div>
+            <div class="address">
+                <div class="address-content">
+                    <div>
+                        <p><strong>Endereço de Depósito</strong></p>
+                        <p style="color: white;">HndPExN2MZXvjScjvGdsDymSgo5pfkSjNJkAfVyHv8dN</p>
+                    </div>
+                    <i class="material-icons">content_copy</i>
+                </div>
+            </div>
+        </div>
+        <div class="more-details">
+            <span>Mais detalhes</span>
+            <i class="material-icons" style="font-size: 16px;">keyboard_arrow_down</i>
+        </div>
+        <button class="button">Salvar e compartilhar endereço</button>
+    </div>
+</body>
+</html>
